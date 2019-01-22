@@ -15,8 +15,8 @@ def preprocess_data(ipfile,opfile,minimumutil,transfile):
             linelist=line.split(",")
             tranid=linelist[0].strip()
             itemid=linelist[1].strip()
-            quantity=int(linelist[3])
-            unit=float(linelist[5])
+            quantity=int(linelist[2])
+            unit=float(linelist[3])
             try:
                   data_dict[tranid][0].append(itemid)
                   data_dict[tranid][1].append(abs(quantity))
